@@ -36,17 +36,17 @@ err() {
 KERNEL_DIR=$PWD
 
 # The name of the Kernel, to name the ZIP
-ZIPNAME="JFla-Karamel"
+ZIPNAME="Styrofoam"
 
 # The name of the device for which the kernel is built
-MODEL="Redmi Note 9"
+MODEL="Redmi 8a"
 
 # The codename of the device
-DEVICE="merlin"
+DEVICE="olivelite"
 
 # The defconfig which should be used. Get it from config.gz from
 # your device or check source
-DEFCONFIG=merlin_defconfig
+DEFCONFIG=olive-perf_defconfig
 
 # Specify compiler. 
 # 'clang' or 'gcc'
@@ -132,7 +132,7 @@ COMMIT_HEAD=$(git log --oneline -1)
 		GCC32_DIR=$KERNEL_DIR/gcc32
 
 	msg "|| Cloning Anykernel ||"
-	git clone --depth 1 --no-single-branch https://github.com/nadinsyllaa/AnyKernel3 -b master
+	git clone --depth 1 --no-single-branch https://github.com/nadinsyllaa/AnyKernel3 -b olivelite
 }
 
 ##------------------------------------------------------##
