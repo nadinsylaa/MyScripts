@@ -36,7 +36,7 @@ err() {
 KERNEL_DIR=$PWD
 
 # The name of the Kernel, to name the ZIP
-ZIPNAME="JFla-Karamel"
+ZIPNAME="Styrofoam-Kernel"
 
 # The name of the device for which the kernel is built
 MODEL="Redmi Note 9"
@@ -132,7 +132,7 @@ COMMIT_HEAD=$(git log --oneline -1)
 		GCC32_DIR=$KERNEL_DIR/gcc32
 
 	msg "|| Cloning Anykernel ||"
-	git clone --depth 1 --no-single-branch https://github.com/nadinsyllaa/AnyKernel3 -b master
+	git clone --depth 1 --no-single-branch https://github.com/nadinsylaa/AnyKernel3 -b memerlin
 }
 
 ##------------------------------------------------------##
